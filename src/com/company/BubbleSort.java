@@ -9,13 +9,13 @@ public class BubbleSort {
             {
                 if (Arr[i] > Arr[i + 1])
                 {
-                    swap(Arr, i+0,i + 1);
+                    swap(Arr, i + 0, i + 1);
                 }
             }
         }
     }
 
-    public static void swap(int[]Arr, int i, int j)
+    public static void swap(int[] Arr, int i, int j)
     {
         int temp = Arr[i];
         Arr[i] = Arr[j];
@@ -24,7 +24,7 @@ public class BubbleSort {
 
     public static boolean checkList(int[] Arr)
     {
-        for (int x=0; x <Arr.length; x++)
+        for (int x = 0; x < Arr.length; x++)
         {
             if (Arr[x] > Arr[x+1])
             {
