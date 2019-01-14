@@ -9,17 +9,10 @@ public class BubbleSort {
             {
                 if (Arr[i] > Arr[i + 1])
                 {
-                    swap(Arr, i + 0, i + 1);
+                    SortingUtil.swap(Arr, i + 0, i + 1);
                 }
             }
         }
-    }
-
-    public static void swap(int[] Arr, int i, int j)
-    {
-        int temp = Arr[i];
-        Arr[i] = Arr[j];
-        Arr[j] = temp;
     }
 
     public static boolean checkList(int[] Arr)
