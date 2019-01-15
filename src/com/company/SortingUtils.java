@@ -18,14 +18,31 @@ public class SortingUtils {
         return true;
     }
 
-    public static int[] randIntArr(int count)
+    public static int[] randomIntArr(int count)
     {
-        for(int)
-        return (int) Math.random() * 10000;
+        int[] randomIntArr = new int[count];
+        for(int n = 0; n < count - 1; n++){
+            randomIntArr[n] = (int)(Math.random() * 10001);
+        }
+        return randomIntArr;
     }
 
-    public static void checkSum(int[] before, int[] after)
-    {
-
+    public static boolean checkSum(int[] before, int[] after) {
+        int beforesum = 0;
+        int aftersum = 0;
+        for (int b = 0; b < before.length; b++) {
+            beforesum = beforesum + before[b];
+        }
+        for (int a = 0; a < after.length; a++) {
+            aftersum = aftersum + after[a];
+        }
+        if (aftersum == beforesum)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
