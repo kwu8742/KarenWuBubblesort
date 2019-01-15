@@ -5,11 +5,13 @@ public class SelectionSort {
     {
         int min = 0;
         for(int i = 0; i < Arr.length; i++) {
-            for (int k = 0; k < Arr.length - 1; k++) {
-                if (min > Arr[k + 1]) {
-                    SortingUtils.swap(Arr, k, k + 1);
+            min = i;
+            for (int k = 1; k < Arr.length - 1; k++) {
+                if (Arr.length[min] > Arr[i + k]) {
+                    min = i + k;
                 }
             }
+            SortingUtils.swap(Arr, i, min);
         }
         return Arr;
     }
