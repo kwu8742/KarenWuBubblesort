@@ -2,7 +2,8 @@ package com.company;
 
 public class BubbleSortRunner {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         int[] testArr = {8, 6, 7, 5, 3, 0, 9, 10, 1, 2, 3};
 
         System.out.print("Before: ");
@@ -10,12 +11,7 @@ public class BubbleSortRunner {
             System.out.print(num + " ");
         System.out.println();
 
-        long time = System.nanoTime();
-        BubbleSort.bubbleSort(randIntArr);
         BubbleSort.bubbleSort(testArr);
-        time = System.nanoTime() - time;
-
-        System.out.println("Time Taken: " + time);
 
         System.out.print("After: ");
         for (int num : testArr)
