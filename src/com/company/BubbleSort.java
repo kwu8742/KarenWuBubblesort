@@ -1,4 +1,5 @@
 package com.company;
+import static com.company.SortingUtil.swap;
 
 public class BubbleSort {
     public static int[] bubbleSort(int[] Arr)
@@ -11,12 +12,5 @@ public class BubbleSort {
             }
         }
         return Arr;
-    }
-
-    public static void swap(int[] Arr, int i, int j)
-    {
-        int temp = Arr[i];
-        Arr[i] = Arr[j];
-        Arr[j] = temp;
     }
 }
