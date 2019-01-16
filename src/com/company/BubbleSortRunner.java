@@ -11,12 +11,16 @@ public class BubbleSortRunner {
             System.out.print(num + " ");
         System.out.println();
 
+        long time = System.nanoTime();
         BubbleSort.bubbleSort(testArr);
+        time = System.nanoTime() - time;
 
         System.out.print("After: ");
         for (int num : testArr)
             System.out.print(num + " ");
         System.out.println();
+
+        System.out.println("Time Taken: " + time);
     }
 }
 
